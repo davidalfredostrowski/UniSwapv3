@@ -1,0 +1,976 @@
+0 verbose cli /usr/bin/node /usr/bin/npm
+1 info using npm@10.5.0
+2 info using node@v20.12.2
+3 timing npm:load:whichnode Completed in 1ms
+4 timing config:load:defaults Completed in 1ms
+5 timing config:load:file:/usr/lib/node_modules/npm/npmrc Completed in 0ms
+6 timing config:load:builtin Completed in 0ms
+7 timing config:load:cli Completed in 2ms
+8 timing config:load:env Completed in 1ms
+9 timing config:load:project Completed in 0ms
+10 timing config:load:file:/home/ubuntu/.npmrc Completed in 0ms
+11 timing config:load:user Completed in 0ms
+12 timing config:load:file:/usr/etc/npmrc Completed in 0ms
+13 timing config:load:global Completed in 0ms
+14 timing config:load:setEnvs Completed in 1ms
+15 timing config:load Completed in 7ms
+16 timing npm:load:configload Completed in 7ms
+17 timing config:load:flatten Completed in 2ms
+18 timing npm:load:mkdirpcache Completed in 0ms
+19 timing npm:load:mkdirplogs Completed in 0ms
+20 verbose title npm i @uniswap/v3-sdk
+21 verbose argv "i" "--save" "@uniswap/v3-sdk"
+22 timing npm:load:setTitle Completed in 1ms
+23 timing npm:load:display Completed in 1ms
+24 verbose logfile logs-max:10 dir:/home/ubuntu/.npm/_logs/2024-05-02T21_21_13_303Z-
+25 verbose logfile /home/ubuntu/.npm/_logs/2024-05-02T21_21_13_303Z-debug-0.log
+26 timing npm:load:logFile Completed in 6ms
+27 timing npm:load:timers Completed in 0ms
+28 timing npm:load:configScope Completed in 0ms
+29 timing npm:load Completed in 40ms
+30 timing arborist:ctor Completed in 0ms
+31 silly logfile done cleaning log files
+32 timing idealTree:init Completed in 274ms
+33 timing idealTree:userRequests Completed in 1ms
+34 silly idealTree buildDeps
+35 silly fetch manifest @uniswap/v3-sdk@*
+36 timing arborist:ctor Completed in 0ms
+37 http fetch GET 200 https://registry.npmjs.org/@uniswap%2fv3-sdk 474ms (cache miss)
+38 silly placeDep ROOT @uniswap/v3-sdk@3.11.1 OK for:  want: *
+39 silly fetch manifest @uniswap/sdk-core@^4.2.1
+40 http fetch GET 200 https://registry.npmjs.org/@uniswap%2fsdk-core 207ms (cache miss)
+41 silly fetch manifest @uniswap/swap-router-contracts@^1.3.0
+42 http fetch GET 200 https://registry.npmjs.org/@uniswap%2fswap-router-contracts 216ms (cache miss)
+43 silly fetch manifest @uniswap/v3-periphery@^1.1.1
+44 http fetch GET 200 https://registry.npmjs.org/@uniswap%2fv3-periphery 197ms (cache miss)
+45 silly fetch manifest @uniswap/v3-staker@1.0.0
+46 http fetch GET 200 https://registry.npmjs.org/@uniswap%2fv3-staker 199ms (cache miss)
+47 silly fetch manifest tiny-invariant@^1.1.0
+48 http fetch GET 200 https://registry.npmjs.org/tiny-invariant 33ms (cache miss)
+49 silly fetch manifest tiny-warning@^1.0.3
+50 http fetch GET 200 https://registry.npmjs.org/tiny-warning 32ms (cache miss)
+51 timing idealTree:#root Completed in 1381ms
+52 silly placeDep ROOT @uniswap/sdk-core@4.2.1 OK for: @uniswap/v3-sdk@3.11.1 want: ^4.2.1
+53 silly placeDep ROOT @uniswap/swap-router-contracts@1.3.1 OK for: @uniswap/v3-sdk@3.11.1 want: ^1.3.0
+54 silly placeDep ROOT @uniswap/v3-periphery@1.4.4 OK for: @uniswap/v3-sdk@3.11.1 want: ^1.1.1
+55 silly placeDep ROOT @uniswap/v3-staker@1.0.0 OK for: @uniswap/v3-sdk@3.11.1 want: 1.0.0
+56 silly placeDep ROOT tiny-invariant@1.3.3 OK for: @uniswap/v3-sdk@3.11.1 want: ^1.1.0
+57 silly placeDep ROOT tiny-warning@1.0.3 OK for: @uniswap/v3-sdk@3.11.1 want: ^1.0.3
+58 silly fetch manifest big.js@^5.2.2
+59 http fetch GET 200 https://registry.npmjs.org/big.js 33ms (cache miss)
+60 silly fetch manifest decimal.js-light@^2.5.0
+61 http fetch GET 200 https://registry.npmjs.org/decimal.js-light 35ms (cache miss)
+62 silly fetch manifest jsbi@^3.1.4
+63 http fetch GET 200 https://registry.npmjs.org/jsbi 35ms (cache miss)
+64 silly fetch manifest toformat@^2.0.0
+65 http fetch GET 200 https://registry.npmjs.org/toformat 76ms (cache miss)
+66 silly fetch manifest @openzeppelin/contracts@3.4.2-solc-0.7
+67 http fetch GET 200 https://registry.npmjs.org/@openzeppelin%2fcontracts 131ms (cache miss)
+68 silly fetch manifest @uniswap/v2-core@^1.0.1
+69 http fetch GET 200 https://registry.npmjs.org/@uniswap%2fv2-core 192ms (cache miss)
+70 silly fetch manifest @uniswap/v3-core@^1.0.0
+71 http fetch GET 200 https://registry.npmjs.org/@uniswap%2fv3-core 227ms (cache miss)
+72 silly fetch manifest @uniswap/v3-periphery@^1.4.4
+73 silly fetch manifest dotenv@^14.2.0
+74 http fetch GET 200 https://registry.npmjs.org/dotenv 32ms (cache miss)
+75 silly fetch manifest hardhat-watcher@^2.1.1
+76 http fetch GET 200 https://registry.npmjs.org/hardhat-watcher 79ms (cache miss)
+77 silly fetch manifest @uniswap/lib@^4.0.1-alpha
+78 http fetch GET 200 https://registry.npmjs.org/@uniswap%2flib 214ms (cache miss)
+79 silly fetch manifest base64-sol@1.0.1
+80 http fetch GET 200 https://registry.npmjs.org/base64-sol 62ms (cache miss)
+81 silly fetch manifest @openzeppelin/contracts@3.4.1-solc-0.7-2
+82 silly fetch manifest @uniswap/v3-core@1.0.0
+83 timing idealTree:node_modules/@uniswap/v3-sdk Completed in 1163ms
+84 silly placeDep ROOT big.js@5.2.2 OK for: @uniswap/sdk-core@4.2.1 want: ^5.2.2
+85 silly placeDep ROOT decimal.js-light@2.5.1 OK for: @uniswap/sdk-core@4.2.1 want: ^2.5.0
+86 silly placeDep ROOT jsbi@3.2.5 OK for: @uniswap/sdk-core@4.2.1 want: ^3.1.4
+87 silly placeDep ROOT toformat@2.0.0 OK for: @uniswap/sdk-core@4.2.1 want: ^2.0.0
+88 timing idealTree:node_modules/@uniswap/sdk-core Completed in 7ms
+89 silly fetch manifest hardhat@^2.0.0
+90 http fetch GET 200 https://registry.npmjs.org/hardhat 7ms (cache hit)
+91 silly fetch manifest ts-node@*
+92 http fetch GET 200 https://registry.npmjs.org/ts-node 3ms (cache hit)
+93 silly fetch manifest @swc/core@>=1.2.50
+94 http fetch GET 200 https://registry.npmjs.org/@swc%2fcore 9ms (cache hit)
+95 silly fetch manifest @swc/helpers@^0.5.0
+96 http fetch GET 200 https://registry.npmjs.org/@swc%2fhelpers 38ms (cache hit)
+97 silly fetch manifest @swc/wasm@>=1.2.50
+98 http fetch GET 200 https://registry.npmjs.org/@swc%2fwasm 5ms (cache hit)
+99 silly fetch manifest @types/node@*
+100 http fetch GET 200 https://registry.npmjs.org/@types%2fnode 20ms (cache hit)
+101 silly fetch manifest typescript@>=2.7
+102 http fetch GET 200 https://registry.npmjs.org/typescript 65ms (cache hit)
+103 silly placeDep ROOT @openzeppelin/contracts@3.4.2-solc-0.7 OK for: @uniswap/swap-router-contracts@1.3.1 want: 3.4.2-solc-0.7
+104 silly placeDep ROOT @uniswap/v2-core@1.0.1 OK for: @uniswap/swap-router-contracts@1.3.1 want: ^1.0.1
+105 silly placeDep ROOT @uniswap/v3-core@1.0.1 OK for: @uniswap/swap-router-contracts@1.3.1 want: ^1.0.0
+106 silly placeDep ROOT dotenv@14.3.2 OK for: @uniswap/swap-router-contracts@1.3.1 want: ^14.2.0
+107 silly placeDep ROOT hardhat-watcher@2.5.0 OK for: @uniswap/swap-router-contracts@1.3.1 want: ^2.1.1
+108 timing idealTree:node_modules/@uniswap/swap-router-contracts Completed in 493ms
+109 timing idealTree:node_modules/@openzeppelin/contracts Completed in 0ms
+110 timing idealTree:node_modules/@uniswap/v2-core Completed in 0ms
+111 timing idealTree:node_modules/@uniswap/v3-core Completed in 0ms
+112 silly placeDep ROOT @uniswap/lib@4.0.1-alpha OK for: @uniswap/v3-periphery@1.4.4 want: ^4.0.1-alpha
+113 silly placeDep ROOT base64-sol@1.0.1 OK for: @uniswap/v3-periphery@1.4.4 want: 1.0.1
+114 timing idealTree:node_modules/@uniswap/v3-periphery Completed in 4ms
+115 timing idealTree:node_modules/@uniswap/lib Completed in 0ms
+116 silly placeDep node_modules/@uniswap/v3-staker @openzeppelin/contracts@3.4.1-solc-0.7-2 OK for: @uniswap/v3-staker@1.0.0 want: 3.4.1-solc-0.7-2
+117 silly placeDep node_modules/@uniswap/v3-staker @uniswap/v3-core@1.0.0 OK for: @uniswap/v3-staker@1.0.0 want: 1.0.0
+118 timing idealTree:node_modules/@uniswap/v3-staker Completed in 4ms
+119 timing idealTree:node_modules/base64-sol Completed in 0ms
+120 timing idealTree:node_modules/big.js Completed in 0ms
+121 timing idealTree:node_modules/decimal.js-light Completed in 0ms
+122 timing idealTree:node_modules/dotenv Completed in 0ms
+123 timing idealTree:node_modules/hardhat-watcher Completed in 0ms
+124 timing idealTree:node_modules/jsbi Completed in 0ms
+125 timing idealTree:node_modules/tiny-invariant Completed in 0ms
+126 timing idealTree:node_modules/tiny-warning Completed in 0ms
+127 timing idealTree:node_modules/toformat Completed in 0ms
+128 timing idealTree:node_modules/@uniswap/v3-staker/node_modules/@openzeppelin/contracts Completed in 0ms
+129 timing idealTree:node_modules/@uniswap/v3-staker/node_modules/@uniswap/v3-core Completed in 0ms
+130 timing idealTree:buildDeps Completed in 3056ms
+131 timing idealTree:fixDepFlags Completed in 7ms
+132 timing idealTree Completed in 3345ms
+133 timing reify:loadTrees Completed in 3347ms
+134 timing reify:diffTrees Completed in 14ms
+135 silly reify moves {}
+136 timing reify:retireShallow Completed in 4ms
+137 timing reify:createSparse Completed in 7ms
+138 timing arborist:ctor Completed in 0ms
+139 timing reify:diffTrees Completed in 8ms
+140 timing reify:createSparse Completed in 3ms
+141 timing reify:loadShrinkwraps Completed in 21ms
+142 timing reify:loadBundles Completed in 0ms
+143 silly audit bulk request {
+143 silly audit   '@ensdomains/ens': [ '0.4.5' ],
+143 silly audit   'ansi-regex': [ '2.1.1', '5.0.1' ],
+143 silly audit   camelcase: [ '3.0.0', '6.3.0' ],
+143 silly audit   cliui: [ '3.2.0', '7.0.4' ],
+143 silly audit   decamelize: [ '1.2.0', '4.0.0' ],
+143 silly audit   'fs-extra': [ '0.30.0', '7.0.1' ],
+143 silly audit   'get-caller-file': [ '1.0.3', '2.0.5' ],
+143 silly audit   'is-fullwidth-code-point': [ '1.0.0', '3.0.0' ],
+143 silly audit   jsonfile: [ '2.4.0', '4.0.0' ],
+143 silly audit   semver: [ '5.7.2', '6.3.1' ],
+143 silly audit   solc: [ '0.4.26', '0.7.3', '0.8.15' ],
+143 silly audit   'string-width': [ '1.0.2', '4.2.3' ],
+143 silly audit   'strip-ansi': [ '3.0.1', '6.0.1' ],
+143 silly audit   'wrap-ansi': [ '2.1.0', '7.0.0' ],
+143 silly audit   y18n: [ '3.2.2', '5.0.8' ],
+143 silly audit   yargs: [ '4.8.1', '16.2.0' ],
+143 silly audit   'yargs-parser': [ '2.4.1', '20.2.4' ],
+143 silly audit   '@ensdomains/resolver': [ '0.2.4' ],
+143 silly audit   '@ethereum-waffle/chai': [ '4.0.10' ],
+143 silly audit   '@ethereum-waffle/compiler': [ '4.0.3' ],
+143 silly audit   '@ethereum-waffle/ens': [ '4.0.3' ],
+143 silly audit   '@ethereum-waffle/mock-contract': [ '4.0.4' ],
+143 silly audit   '@ethereum-waffle/provider': [ '4.0.5' ],
+143 silly audit   '@ethereumjs/block': [ '3.6.3' ],
+143 silly audit   '@ethereumjs/common': [ '2.6.5', '2.6.0' ],
+143 silly audit   '@ethereumjs/tx': [ '3.5.2', '3.4.0' ],
+143 silly audit   'ethereumjs-util': [ '7.1.5', '6.2.1', '7.1.3' ],
+143 silly audit   '@ethereumjs/blockchain': [ '5.5.3' ],
+143 silly audit   '@ethereumjs/ethash': [ '1.1.0' ],
+143 silly audit   '@ethereumjs/rlp': [ '4.0.1' ],
+143 silly audit   '@ethereumjs/util': [ '8.1.0' ],
+143 silly audit   '@noble/hashes': [ '1.3.3', '1.4.0', '1.2.0' ],
+143 silly audit   'ethereum-cryptography': [ '2.1.3', '0.1.3', '1.2.0' ],
+143 silly audit   '@ethereumjs/vm': [ '5.6.0' ],
+143 silly audit   debug: [ '2.6.9', '3.2.7', '4.3.4' ],
+143 silly audit   ms: [ '2.0.0', '2.1.3', '2.1.2' ],
+143 silly audit   '@ethersproject/abi': [ '5.7.0' ],
+143 silly audit   '@ethersproject/abstract-provider': [ '5.7.0' ],
+143 silly audit   '@ethersproject/abstract-signer': [ '5.7.0' ],
+143 silly audit   '@ethersproject/address': [ '5.7.0' ],
+143 silly audit   '@ethersproject/base64': [ '5.7.0' ],
+143 silly audit   '@ethersproject/basex': [ '5.7.0' ],
+143 silly audit   '@ethersproject/bignumber': [ '5.7.0' ],
+143 silly audit   '@ethersproject/bytes': [ '5.7.0' ],
+143 silly audit   '@ethersproject/constants': [ '5.7.0' ],
+143 silly audit   '@ethersproject/contracts': [ '5.7.0' ],
+143 silly audit   '@ethersproject/hash': [ '5.7.0' ],
+143 silly audit   '@ethersproject/hdnode': [ '5.7.0' ],
+143 silly audit   '@ethersproject/json-wallets': [ '5.7.0' ],
+143 silly audit   '@ethersproject/keccak256': [ '5.7.0' ],
+143 silly audit   '@ethersproject/logger': [ '5.7.0' ],
+143 silly audit   '@ethersproject/networks': [ '5.7.1' ],
+143 silly audit   '@ethersproject/pbkdf2': [ '5.7.0' ],
+143 silly audit   '@ethersproject/properties': [ '5.7.0' ],
+143 silly audit   '@ethersproject/providers': [ '5.7.2' ],
+143 silly audit   '@ethersproject/random': [ '5.7.0' ],
+143 silly audit   '@ethersproject/rlp': [ '5.7.0' ],
+143 silly audit   '@ethersproject/sha2': [ '5.7.0' ],
+143 silly audit   '@ethersproject/signing-key': [ '5.7.0' ],
+143 silly audit   '@ethersproject/solidity': [ '5.7.0' ],
+143 silly audit   '@ethersproject/strings': [ '5.7.0' ],
+143 silly audit   '@ethersproject/transactions': [ '5.7.0' ],
+143 silly audit   '@ethersproject/units': [ '5.7.0' ],
+143 silly audit   '@ethersproject/wallet': [ '5.7.0' ],
+143 silly audit   '@ethersproject/web': [ '5.7.1' ],
+143 silly audit   '@ethersproject/wordlists': [ '5.7.0' ],
+143 silly audit   '@fastify/busboy': [ '2.1.1' ],
+143 silly audit   '@ganache/ethereum-address': [ '0.1.4' ],
+143 silly audit   '@ganache/ethereum-options': [ '0.1.4' ],
+143 silly audit   '@ganache/ethereum-utils': [ '0.1.4' ],
+143 silly audit   '@ganache/options': [ '0.1.4' ],
+143 silly audit   '@ganache/rlp': [ '0.1.4' ],
+143 silly audit   '@ganache/utils': [ '0.1.4' ],
+143 silly audit   '@metamask/eth-sig-util': [ '4.0.1' ],
+143 silly audit   '@types/bn.js': [ '4.11.6', '5.1.5', '5.1.0' ],
+143 silly audit   'bn.js': [ '4.12.0', '5.2.1', '4.11.6' ],
+143 silly audit   '@noble/curves': [ '1.3.0' ],
+143 silly audit   '@noble/secp256k1': [ '1.7.1' ],
+143 silly audit   '@nomicfoundation/edr': [ '0.3.7' ],
+143 silly audit   '@nomicfoundation/edr-darwin-arm64': [ '0.3.7' ],
+143 silly audit   '@nomicfoundation/edr-darwin-x64': [ '0.3.7' ],
+143 silly audit   '@nomicfoundation/edr-linux-arm64-gnu': [ '0.3.7' ],
+143 silly audit   '@nomicfoundation/edr-linux-arm64-musl': [ '0.3.7' ],
+143 silly audit   '@nomicfoundation/edr-linux-x64-gnu': [ '0.3.7' ],
+143 silly audit   '@nomicfoundation/edr-linux-x64-musl': [ '0.3.7' ],
+143 silly audit   '@nomicfoundation/edr-win32-x64-msvc': [ '0.3.7' ],
+143 silly audit   '@nomicfoundation/ethereumjs-common': [ '4.0.4' ],
+143 silly audit   '@nomicfoundation/ethereumjs-rlp': [ '5.0.4' ],
+143 silly audit   '@nomicfoundation/ethereumjs-tx': [ '5.0.4' ],
+143 silly audit   '@nomicfoundation/ethereumjs-util': [ '9.0.4' ],
+143 silly audit   '@nomicfoundation/solidity-analyzer': [ '0.1.1' ],
+143 silly audit   '@nomicfoundation/solidity-analyzer-darwin-arm64': [ '0.1.1' ],
+143 silly audit   '@nomicfoundation/solidity-analyzer-darwin-x64': [ '0.1.1' ],
+143 silly audit   '@nomicfoundation/solidity-analyzer-freebsd-x64': [ '0.1.1' ],
+143 silly audit   '@nomicfoundation/solidity-analyzer-linux-arm64-gnu': [ '0.1.1' ],
+143 silly audit   '@nomicfoundation/solidity-analyzer-linux-arm64-musl': [ '0.1.1' ],
+143 silly audit   '@nomicfoundation/solidity-analyzer-linux-x64-gnu': [ '0.1.1' ],
+143 silly audit   '@nomicfoundation/solidity-analyzer-linux-x64-musl': [ '0.1.1' ],
+143 silly audit   '@nomicfoundation/solidity-analyzer-win32-arm64-msvc': [ '0.1.1' ],
+143 silly audit   '@nomicfoundation/solidity-analyzer-win32-ia32-msvc': [ '0.1.1' ],
+143 silly audit   '@nomicfoundation/solidity-analyzer-win32-x64-msvc': [ '0.1.1' ],
+143 silly audit   '@nomiclabs/hardhat-ethers': [ '2.2.3' ],
+143 silly audit   '@nomiclabs/hardhat-waffle': [ '2.0.6' ],
+143 silly audit   '@resolver-engine/core': [ '0.3.3' ],
+143 silly audit   '@resolver-engine/fs': [ '0.3.3' ],
+143 silly audit   '@resolver-engine/imports': [ '0.3.3' ],
+143 silly audit   '@resolver-engine/imports-fs': [ '0.3.3' ],
+143 silly audit   '@scure/base': [ '1.1.6' ],
+143 silly audit   '@scure/bip32': [ '1.3.3', '1.1.5' ],
+143 silly audit   '@scure/bip39': [ '1.2.2', '1.1.1' ],
+143 silly audit   '@sentry/core': [ '5.30.0' ],
+143 silly audit   '@sentry/hub': [ '5.30.0' ],
+143 silly audit   '@sentry/minimal': [ '5.30.0' ],
+143 silly audit   '@sentry/node': [ '5.30.0' ],
+143 silly audit   '@sentry/tracing': [ '5.30.0' ],
+143 silly audit   '@sentry/types': [ '5.30.0' ],
+143 silly audit   '@sentry/utils': [ '5.30.0' ],
+143 silly audit   '@trufflesuite/bigint-buffer': [ '1.1.9', '1.1.10' ],
+143 silly audit   '@typechain/ethers-v5': [ '10.2.1' ],
+143 silly audit   '@types/abstract-leveldown': [ '7.2.5' ],
+143 silly audit   '@types/chai': [ '4.3.15' ],
+143 silly audit   '@types/level-errors': [ '3.0.2' ],
+143 silly audit   '@types/levelup': [ '4.3.3' ],
+143 silly audit   '@types/lru-cache': [ '5.1.1' ],
+143 silly audit   '@types/mkdirp': [ '0.5.2' ],
+143 silly audit   '@types/node': [ '20.12.8', '11.11.6', '17.0.0' ],
+143 silly audit   '@types/node-fetch': [ '2.6.11' ],
+143 silly audit   '@types/pbkdf2': [ '3.1.2' ],
+143 silly audit   '@types/prettier': [ '2.7.3' ],
+143 silly audit   '@types/secp256k1': [ '4.0.6' ],
+143 silly audit   '@types/sinon': [ '17.0.3' ],
+143 silly audit   '@types/sinon-chai': [ '3.2.12' ],
+143 silly audit   '@types/sinonjs__fake-timers': [ '8.1.5' ],
+143 silly audit   'abstract-leveldown': [ '6.3.0', '6.2.3', '7.2.0' ],
+143 silly audit   'adm-zip': [ '0.4.16' ],
+143 silly audit   'aes-js': [ '3.0.0' ],
+143 silly audit   'agent-base': [ '6.0.2' ],
+143 silly audit   'aggregate-error': [ '3.1.0' ],
+143 silly audit   ajv: [ '6.12.6' ],
+143 silly audit   'ansi-align': [ '3.0.1' ],
+143 silly audit   'ansi-colors': [ '4.1.3', '4.1.1' ],
+143 silly audit   'ansi-escapes': [ '4.3.2' ],
+143 silly audit   'ansi-styles': [ '3.2.1', '4.3.0' ],
+143 silly audit   anymatch: [ '3.1.3' ],
+143 silly audit   argparse: [ '2.0.1' ],
+143 silly audit   'array-back': [ '3.1.0', '4.0.2' ],
+143 silly audit   asn1: [ '0.2.6' ],
+143 silly audit   'assert-plus': [ '1.0.0' ],
+143 silly audit   'assertion-error': [ '2.0.1' ],
+143 silly audit   async: [ '2.6.4' ],
+143 silly audit   'async-eventemitter': [ '0.2.4' ],
+143 silly audit   asynckit: [ '0.4.0' ],
+143 silly audit   'aws-sign2': [ '0.7.0' ],
+143 silly audit   aws4: [ '1.12.0' ],
+143 silly audit   'balanced-match': [ '1.0.2' ],
+143 silly audit   'base-x': [ '3.0.9' ],
+143 silly audit   'base64-js': [ '1.5.1' ],
+143 silly audit   'bcrypt-pbkdf': [ '1.0.2' ],
+143 silly audit   tweetnacl: [ '0.14.5', '1.0.3' ],
+143 silly audit   bech32: [ '1.1.4' ],
+143 silly audit   'bignumber.js': [ '9.1.2' ],
+143 silly audit   'binary-extensions': [ '2.3.0' ],
+143 silly audit   bip39: [ '3.0.4' ],
+143 silly audit   blakejs: [ '1.2.1' ],
+143 silly audit   bluebird: [ '3.7.2' ],
+143 silly audit   boxen: [ '5.1.2' ],
+143 silly audit   chalk: [ '4.1.2', '2.4.2' ],
+143 silly audit   'color-convert': [ '2.0.1', '1.9.3' ],
+143 silly audit   'color-name': [ '1.1.4', '1.1.3' ],
+143 silly audit   'has-flag': [ '4.0.0', '3.0.0' ],
+143 silly audit   'supports-color': [ '7.2.0', '8.1.1', '5.5.0' ],
+143 silly audit   'type-fest': [ '0.20.2', '0.7.1', '0.21.3' ],
+143 silly audit   'brace-expansion': [ '1.1.11', '2.0.1' ],
+143 silly audit   braces: [ '3.0.2' ],
+143 silly audit   brorand: [ '1.1.0' ],
+143 silly audit   'browser-stdout': [ '1.3.1' ],
+143 silly audit   'browserify-aes': [ '1.2.0' ],
+143 silly audit   'buffer-xor': [ '1.0.3', '2.0.2' ],
+143 silly audit   bs58: [ '4.0.1' ],
+143 silly audit   bs58check: [ '2.1.2' ],
+143 silly audit   buffer: [ '5.7.1', '6.0.3' ],
+143 silly audit   'buffer-from': [ '1.1.2' ],
+143 silly audit   bytes: [ '3.1.2' ],
+143 silly audit   'call-bind': [ '1.0.7' ],
+143 silly audit   caseless: [ '0.12.0' ],
+143 silly audit   chai: [ '5.1.0' ],
+143 silly audit   'check-error': [ '2.0.0' ],
+143 silly audit   chokidar: [ '3.6.0', '3.5.3' ],
+143 silly audit   'ci-info': [ '2.0.0' ],
+143 silly audit   'cipher-base': [ '1.0.4' ],
+143 silly audit   'clean-stack': [ '2.2.0' ],
+143 silly audit   'cli-boxes': [ '2.2.1' ],
+143 silly audit   'code-point-at': [ '1.1.0' ],
+143 silly audit   'combined-stream': [ '1.0.8' ],
+143 silly audit   'command-exists': [ '1.2.9' ],
+143 silly audit   'command-line-args': [ '5.2.1' ],
+143 silly audit   'command-line-usage': [ '6.1.3' ],
+143 silly audit   typical: [ '5.2.0', '4.0.0' ],
+143 silly audit   commander: [ '8.3.0', '3.0.2' ],
+143 silly audit   'concat-map': [ '0.0.1' ],
+143 silly audit   cookie: [ '0.4.2' ],
+143 silly audit   'core-js-pure': [ '3.37.0' ],
+143 silly audit   'core-util-is': [ '1.0.2' ],
+143 silly audit   'crc-32': [ '1.2.2' ],
+143 silly audit   'create-hash': [ '1.2.0' ],
+143 silly audit   'create-hmac': [ '1.1.7' ],
+143 silly audit   dashdash: [ '1.14.1' ],
+143 silly audit   'deep-eql': [ '5.0.1' ],
+143 silly audit   'deep-extend': [ '0.6.0' ],
+143 silly audit   'deferred-leveldown': [ '5.3.0' ],
+143 silly audit   'define-data-property': [ '1.1.4' ],
+143 silly audit   'delayed-stream': [ '1.0.0' ],
+143 silly audit   depd: [ '2.0.0' ],
+143 silly audit   diff: [ '5.0.0' ],
+143 silly audit   'ecc-jsbn': [ '0.1.2' ],
+143 silly audit   elliptic: [ '6.5.4' ],
+143 silly audit   emittery: [ '0.10.0' ],
+143 silly audit   'emoji-regex': [ '8.0.0' ],
+143 silly audit   'encoding-down': [ '6.3.0' ],
+143 silly audit   enquirer: [ '2.4.1' ],
+143 silly audit   'env-paths': [ '2.2.1' ],
+143 silly audit   errno: [ '0.1.8' ],
+143 silly audit   'error-ex': [ '1.3.2' ],
+143 silly audit   'es-define-property': [ '1.0.0' ],
+143 silly audit   'es-errors': [ '1.3.0' ],
+143 silly audit   escalade: [ '3.1.2' ],
+143 silly audit   'escape-string-regexp': [ '1.0.5', '4.0.0' ],
+143 silly audit   'eth-ens-namehash': [ '2.0.8' ],
+143 silly audit   'js-sha3': [ '0.5.7', '0.8.0' ],
+143 silly audit   'ethereum-bloom-filters': [ '1.1.0' ],
+143 silly audit   'ethereum-waffle': [ '4.0.10' ],
+143 silly audit   'ethereumjs-abi': [ '0.6.8' ],
+143 silly audit   ethers: [ '5.7.2' ],
+143 silly audit   'ethjs-unit': [ '0.1.6' ],
+143 silly audit   'ethjs-util': [ '0.1.6' ],
+143 silly audit   evp_bytestokey: [ '1.0.3' ],
+143 silly audit   extend: [ '3.0.2' ],
+143 silly audit   extsprintf: [ '1.3.0' ],
+143 silly audit   'fast-deep-equal': [ '3.1.3' ],
+143 silly audit   'fast-json-stable-stringify': [ '2.1.0' ],
+143 silly audit   'fill-range': [ '7.0.1' ],
+143 silly audit   'find-replace': [ '3.0.0' ],
+143 silly audit   'find-up': [ '2.1.0', '5.0.0', '1.1.2' ],
+143 silly audit   flat: [ '5.0.2' ],
+143 silly audit   'follow-redirects': [ '1.15.6' ],
+143 silly audit   'forever-agent': [ '0.6.1' ],
+143 silly audit   'form-data': [ '4.0.0', '2.3.3' ],
+143 silly audit   'fp-ts': [ '1.19.3' ],
+143 silly audit   'fs.realpath': [ '1.0.0' ],
+143 silly audit   fsevents: [ '2.3.3' ],
+143 silly audit   'function-bind': [ '1.1.2' ],
+143 silly audit   'functional-red-black-tree': [ '1.0.1' ],
+143 silly audit   ganache: [ '7.4.3' ],
+143 silly audit   'node-gyp-build': [ '4.3.0', '4.4.0' ],
+143 silly audit   'hash.js': [ '1.1.7' ],
+143 silly audit   'hmac-drbg': [ '1.0.1' ],
+143 silly audit   ieee754: [ '1.2.1' ],
+143 silly audit   inherits: [ '2.0.4' ],
+143 silly audit   keccak: [ '3.0.4', '3.0.1', '3.0.2' ],
+143 silly audit   'level-concat-iterator': [ '2.0.1', '3.1.0' ],
+143 silly audit   'level-supports': [ '1.0.1', '2.1.0' ],
+143 silly audit   'minimalistic-assert': [ '1.0.1' ],
+143 silly audit   'minimalistic-crypto-utils': [ '1.0.1' ],
+143 silly audit   'node-addon-api': [ '2.0.2' ],
+143 silly audit   'readable-stream': [ '3.6.2', '3.6.0' ],
+143 silly audit   'safe-buffer': [ '5.2.1' ],
+143 silly audit   secp256k1: [ '4.0.3' ],
+143 silly audit   string_decoder: [ '1.3.0' ],
+143 silly audit   'util-deprecate': [ '1.0.2' ],
+143 silly audit   'get-func-name': [ '2.0.2' ],
+143 silly audit   'get-intrinsic': [ '1.2.4' ],
+143 silly audit   getpass: [ '0.1.7' ],
+143 silly audit   glob: [ '7.2.0', '8.1.0', '7.1.7' ],
+143 silly audit   'glob-parent': [ '5.1.2' ],
+143 silly audit   gopd: [ '1.0.1' ],
+143 silly audit   'graceful-fs': [ '4.2.11' ],
+143 silly audit   'har-schema': [ '2.0.0' ],
+143 silly audit   'har-validator': [ '5.1.5' ],
+143 silly audit   hardhat: [ '2.22.3' ],
+143 silly audit   'require-from-string': [ '2.0.2', '1.2.1' ],
+143 silly audit   'has-property-descriptors': [ '1.0.2' ],
+143 silly audit   'has-proto': [ '1.0.3' ],
+143 silly audit   'has-symbols': [ '1.0.3' ],
+143 silly audit   'hash-base': [ '3.1.0' ],
+143 silly audit   hasown: [ '2.0.2' ],
+143 silly audit   he: [ '1.2.0' ],
+143 silly audit   'hosted-git-info': [ '2.8.9' ],
+143 silly audit   'http-errors': [ '2.0.0' ],
+143 silly audit   'http-signature': [ '1.2.0' ],
+143 silly audit   'https-proxy-agent': [ '5.0.1' ],
+143 silly audit   'iconv-lite': [ '0.4.24' ],
+143 silly audit   'idna-uts46-hx': [ '2.3.1' ],
+143 silly audit   immediate: [ '3.3.0', '3.2.3' ],
+143 silly audit   immutable: [ '4.3.5' ],
+143 silly audit   'indent-string': [ '4.0.0' ],
+143 silly audit   inflight: [ '1.0.6' ],
+143 silly audit   'invert-kv': [ '1.0.0' ],
+143 silly audit   'io-ts': [ '1.10.4' ],
+143 silly audit   'is-arrayish': [ '0.2.1' ],
+143 silly audit   'is-binary-path': [ '2.1.0' ],
+143 silly audit   'is-extglob': [ '2.1.1' ],
+143 silly audit   'is-glob': [ '4.0.3' ],
+143 silly audit   'is-hex-prefixed': [ '1.0.0' ],
+143 silly audit   'is-number': [ '7.0.0' ],
+143 silly audit   'is-plain-obj': [ '2.1.0' ],
+143 silly audit   'is-typedarray': [ '1.0.0' ],
+143 silly audit   'is-unicode-supported': [ '0.1.0' ],
+143 silly audit   'is-url': [ '1.2.4' ],
+143 silly audit   'is-utf8': [ '0.2.1' ],
+143 silly audit   isstream: [ '0.1.2' ],
+143 silly audit   'js-yaml': [ '4.1.0' ],
+143 silly audit   jsbn: [ '0.1.1' ],
+143 silly audit   'json-bigint': [ '1.0.0' ],
+143 silly audit   'json-schema': [ '0.4.0' ],
+143 silly audit   'json-schema-traverse': [ '0.4.1' ],
+143 silly audit   'json-stringify-safe': [ '5.0.1' ],
+143 silly audit   jsprim: [ '1.4.2' ],
+143 silly audit   klaw: [ '1.3.1' ],
+143 silly audit   lcid: [ '1.0.0' ],
+143 silly audit   'level-codec': [ '9.0.2' ],
+143 silly audit   'level-errors': [ '2.0.1' ],
+143 silly audit   'level-iterator-stream': [ '4.0.2' ],
+143 silly audit   'level-mem': [ '5.0.1' ],
+143 silly audit   'level-packager': [ '5.1.1' ],
+143 silly audit   'level-ws': [ '2.0.0' ],
+143 silly audit   levelup: [ '4.4.0' ],
+143 silly audit   'load-json-file': [ '1.1.0' ],
+143 silly audit   'locate-path': [ '2.0.0', '6.0.0' ],
+143 silly audit   lodash: [ '4.17.21' ],
+143 silly audit   'lodash.assign': [ '4.2.0' ],
+143 silly audit   'lodash.camelcase': [ '4.3.0' ],
+143 silly audit   'log-symbols': [ '4.1.0' ],
+143 silly audit   loupe: [ '3.1.0' ],
+143 silly audit   lru_map: [ '0.3.3' ],
+143 silly audit   'lru-cache': [ '5.1.1' ],
+143 silly audit   ltgt: [ '2.2.1' ],
+143 silly audit   'mcl-wasm': [ '0.7.9' ],
+143 silly audit   'md5.js': [ '1.3.5' ],
+143 silly audit   memdown: [ '5.1.0' ],
+143 silly audit   memorystream: [ '0.3.1' ],
+143 silly audit   'merkle-patricia-tree': [ '4.2.4' ],
+143 silly audit   'micro-ftch': [ '0.3.1' ],
+143 silly audit   'miller-rabin': [ '4.0.1' ],
+143 silly audit   'mime-db': [ '1.52.0' ],
+143 silly audit   'mime-types': [ '2.1.35' ],
+143 silly audit   minimatch: [ '3.1.2', '5.0.1' ],
+143 silly audit   minimist: [ '1.2.8' ],
+143 silly audit   mkdirp: [ '0.5.6', '1.0.4' ],
+143 silly audit   mnemonist: [ '0.38.5' ],
+143 silly audit   mocha: [ '10.4.0' ],
+143 silly audit   'p-limit': [ '3.1.0', '1.3.0' ],
+143 silly audit   'p-locate': [ '5.0.0', '2.0.0' ],
+143 silly audit   'path-exists': [ '4.0.0', '3.0.0', '2.1.0' ],
+143 silly audit   'node-fetch': [ '2.7.0' ],
+143 silly audit   'normalize-package-data': [ '2.5.0' ],
+143 silly audit   'normalize-path': [ '3.0.0' ],
+143 silly audit   'number-is-nan': [ '1.0.1' ],
+143 silly audit   'number-to-bn': [ '1.7.0' ],
+143 silly audit   'oauth-sign': [ '0.9.0' ],
+143 silly audit   'object-inspect': [ '1.13.1' ],
+143 silly audit   obliterator: [ '2.0.4' ],
+143 silly audit   once: [ '1.4.0' ],
+143 silly audit   'os-locale': [ '1.4.0' ],
+143 silly audit   'os-tmpdir': [ '1.0.2' ],
+143 silly audit   'p-map': [ '4.0.0' ],
+143 silly audit   'p-try': [ '1.0.0' ],
+143 silly audit   'parse-json': [ '2.2.0' ],
+143 silly audit   'path-browserify': [ '1.0.1' ],
+143 silly audit   'path-is-absolute': [ '1.0.1' ],
+143 silly audit   'path-parse': [ '1.0.7' ],
+143 silly audit   'path-type': [ '1.1.0' ],
+143 silly audit   pathval: [ '2.0.0' ],
+143 silly audit   pbkdf2: [ '3.1.2' ],
+143 silly audit   'performance-now': [ '2.1.0' ],
+143 silly audit   picomatch: [ '2.3.1' ],
+143 silly audit   pify: [ '2.3.0' ],
+143 silly audit   pinkie: [ '2.0.4' ],
+143 silly audit   'pinkie-promise': [ '2.0.1' ],
+143 silly audit   prettier: [ '2.8.8' ],
+143 silly audit   prr: [ '1.0.1' ],
+143 silly audit   psl: [ '1.9.0' ],
+143 silly audit   punycode: [ '2.1.0', '2.3.1', '1.4.1' ],
+143 silly audit   qs: [ '6.5.3', '6.12.1' ],
+143 silly audit   randombytes: [ '2.1.0' ],
+143 silly audit   'raw-body': [ '2.5.2' ],
+143 silly audit   'read-pkg': [ '1.1.0' ],
+143 silly audit   'read-pkg-up': [ '1.0.1' ],
+143 silly audit   readdirp: [ '3.6.0' ],
+143 silly audit   'reduce-flatten': [ '2.0.0' ],
+143 silly audit   request: [ '2.88.2' ],
+143 silly audit   uuid: [ '3.4.0', '8.3.2' ],
+143 silly audit   'require-directory': [ '2.1.1' ],
+143 silly audit   'require-main-filename': [ '1.0.1' ],
+143 silly audit   resolve: [ '1.17.0' ],
+143 silly audit   rimraf: [ '2.7.1' ],
+143 silly audit   ripemd160: [ '2.0.2' ],
+143 silly audit   rlp: [ '2.2.6' ],
+143 silly audit   'rustbn.js': [ '0.2.0' ],
+143 silly audit   'safer-buffer': [ '2.1.2' ],
+143 silly audit   'scrypt-js': [ '3.0.1' ],
+143 silly audit   seedrandom: [ '3.0.5' ],
+143 silly audit   'semaphore-async-await': [ '1.5.1' ],
+143 silly audit   'serialize-javascript': [ '6.0.0' ],
+143 silly audit   'set-blocking': [ '2.0.0' ],
+143 silly audit   'set-function-length': [ '1.2.2' ],
+143 silly audit   setimmediate: [ '1.0.5' ],
+143 silly audit   setprototypeof: [ '1.2.0' ],
+143 silly audit   'sha.js': [ '2.4.11' ],
+143 silly audit   'side-channel': [ '1.0.6' ],
+143 silly audit   'source-map': [ '0.6.1' ],
+143 silly audit   'source-map-support': [ '0.5.21' ],
+143 silly audit   'spdx-correct': [ '3.2.0' ],
+143 silly audit   'spdx-exceptions': [ '2.5.0' ],
+143 silly audit   'spdx-expression-parse': [ '3.0.1' ],
+143 silly audit   'spdx-license-ids': [ '3.0.17' ],
+143 silly audit   sshpk: [ '1.18.0' ],
+143 silly audit   'stacktrace-parser': [ '0.1.10' ],
+143 silly audit   statuses: [ '2.0.1' ],
+143 silly audit   'string-format': [ '2.0.0' ],
+143 silly audit   'strip-bom': [ '2.0.0' ],
+143 silly audit   'strip-hex-prefix': [ '1.0.0' ],
+143 silly audit   'strip-json-comments': [ '3.1.1' ],
+143 silly audit   'table-layout': [ '1.0.2' ],
+143 silly audit   testrpc: [ '0.0.1' ],
+143 silly audit   tmp: [ '0.0.33' ],
+143 silly audit   'to-regex-range': [ '5.0.1' ],
+143 silly audit   toidentifier: [ '1.0.1' ],
+143 silly audit   'tough-cookie': [ '2.5.0' ],
+143 silly audit   tr46: [ '0.0.3' ],
+143 silly audit   'ts-command-line-args': [ '2.5.1' ],
+143 silly audit   'ts-essentials': [ '7.0.3' ],
+143 silly audit   tslib: [ '1.14.1' ],
+143 silly audit   tsort: [ '0.0.1' ],
+143 silly audit   'tunnel-agent': [ '0.6.0' ],
+143 silly audit   'tweetnacl-util': [ '0.15.1' ],
+143 silly audit   typechain: [ '8.3.2' ],
+143 silly audit   typescript: [ '5.4.5' ],
+143 silly audit   undici: [ '5.28.4' ],
+143 silly audit   'undici-types': [ '5.26.5' ],
+143 silly audit   universalify: [ '0.1.2' ],
+143 silly audit   unpipe: [ '1.0.0' ],
+143 silly audit   'uri-js': [ '4.4.1' ],
+143 silly audit   url: [ '0.11.3' ],
+143 silly audit   utf8: [ '3.0.0' ],
+143 silly audit   'validate-npm-package-license': [ '3.0.4' ],
+143 silly audit   verror: [ '1.10.0' ],
+143 silly audit   'web3-utils': [ '1.10.4' ],
+143 silly audit   'webidl-conversions': [ '3.0.1' ],
+143 silly audit   'whatwg-url': [ '5.0.0' ],
+143 silly audit   'which-module': [ '1.0.0' ],
+143 silly audit   'widest-line': [ '3.1.0' ],
+143 silly audit   'window-size': [ '0.2.0' ],
+143 silly audit   wordwrapjs: [ '4.0.1' ],
+143 silly audit   workerpool: [ '6.2.1' ],
+143 silly audit   wrappy: [ '1.0.2' ],
+143 silly audit   ws: [ '7.4.6' ],
+143 silly audit   xtend: [ '4.0.2' ],
+143 silly audit   yallist: [ '3.1.1' ],
+143 silly audit   'yargs-unparser': [ '2.0.0' ],
+143 silly audit   'yocto-queue': [ '0.1.0' ],
+143 silly audit   '@uniswap/v3-sdk': [ '3.11.1' ],
+143 silly audit   '@uniswap/sdk-core': [ '4.2.1' ],
+143 silly audit   '@uniswap/swap-router-contracts': [ '1.3.1' ],
+143 silly audit   '@uniswap/v3-periphery': [ '1.4.4' ],
+143 silly audit   '@uniswap/v3-staker': [ '1.0.0' ],
+143 silly audit   'tiny-invariant': [ '1.3.3' ],
+143 silly audit   'tiny-warning': [ '1.0.3' ],
+143 silly audit   'big.js': [ '5.2.2' ],
+143 silly audit   'decimal.js-light': [ '2.5.1' ],
+143 silly audit   jsbi: [ '3.2.5' ],
+143 silly audit   toformat: [ '2.0.0' ],
+143 silly audit   '@openzeppelin/contracts': [ '3.4.2-solc-0.7', '3.4.1-solc-0.7-2' ],
+143 silly audit   '@uniswap/v2-core': [ '1.0.1' ],
+143 silly audit   '@uniswap/v3-core': [ '1.0.1', '1.0.0' ],
+143 silly audit   dotenv: [ '14.3.2' ],
+143 silly audit   'hardhat-watcher': [ '2.5.0' ],
+143 silly audit   '@uniswap/lib': [ '4.0.1-alpha' ],
+143 silly audit   'base64-sol': [ '1.0.1' ],
+143 silly audit   bufferutil: [ '4.0.5' ],
+143 silly audit   'utf-8-validate': [ '5.0.7' ],
+143 silly audit   '@types/seedrandom': [ '3.0.1' ],
+143 silly audit   catering: [ '2.1.0' ],
+143 silly audit   'is-buffer': [ '2.0.5' ],
+143 silly audit   leveldown: [ '6.1.0' ],
+143 silly audit   'napi-macros': [ '2.0.0' ],
+143 silly audit   'queue-microtask': [ '1.2.3' ],
+143 silly audit   'queue-tick': [ '1.0.0' ]
+143 silly audit }
+144 verbose reify failed optional dependency /home/ubuntu/node_modules/fsevents
+145 silly reify mark deleted [ '/home/ubuntu/node_modules/fsevents' ]
+146 verbose reify failed optional dependency /home/ubuntu/node_modules/@nomicfoundation/solidity-analyzer-win32-x64-msvc
+147 silly reify mark deleted [
+147 silly reify   '/home/ubuntu/node_modules/@nomicfoundation/solidity-analyzer-win32-x64-msvc'
+147 silly reify ]
+148 verbose reify failed optional dependency /home/ubuntu/node_modules/@nomicfoundation/solidity-analyzer-win32-ia32-msvc
+149 silly reify mark deleted [
+149 silly reify   '/home/ubuntu/node_modules/@nomicfoundation/solidity-analyzer-win32-ia32-msvc'
+149 silly reify ]
+150 verbose reify failed optional dependency /home/ubuntu/node_modules/@nomicfoundation/solidity-analyzer-win32-arm64-msvc
+151 silly reify mark deleted [
+151 silly reify   '/home/ubuntu/node_modules/@nomicfoundation/solidity-analyzer-win32-arm64-msvc'
+151 silly reify ]
+152 verbose reify failed optional dependency /home/ubuntu/node_modules/@nomicfoundation/solidity-analyzer-linux-arm64-musl
+153 silly reify mark deleted [
+153 silly reify   '/home/ubuntu/node_modules/@nomicfoundation/solidity-analyzer-linux-arm64-musl'
+153 silly reify ]
+154 verbose reify failed optional dependency /home/ubuntu/node_modules/@nomicfoundation/solidity-analyzer-linux-arm64-gnu
+155 silly reify mark deleted [
+155 silly reify   '/home/ubuntu/node_modules/@nomicfoundation/solidity-analyzer-linux-arm64-gnu'
+155 silly reify ]
+156 verbose reify failed optional dependency /home/ubuntu/node_modules/@nomicfoundation/solidity-analyzer-freebsd-x64
+157 silly reify mark deleted [
+157 silly reify   '/home/ubuntu/node_modules/@nomicfoundation/solidity-analyzer-freebsd-x64'
+157 silly reify ]
+158 verbose reify failed optional dependency /home/ubuntu/node_modules/@nomicfoundation/solidity-analyzer-darwin-x64
+159 silly reify mark deleted [
+159 silly reify   '/home/ubuntu/node_modules/@nomicfoundation/solidity-analyzer-darwin-x64'
+159 silly reify ]
+160 verbose reify failed optional dependency /home/ubuntu/node_modules/@nomicfoundation/solidity-analyzer-darwin-arm64
+161 silly reify mark deleted [
+161 silly reify   '/home/ubuntu/node_modules/@nomicfoundation/solidity-analyzer-darwin-arm64'
+161 silly reify ]
+162 verbose reify failed optional dependency /home/ubuntu/node_modules/@nomicfoundation/edr-win32-x64-msvc
+163 silly reify mark deleted [ '/home/ubuntu/node_modules/@nomicfoundation/edr-win32-x64-msvc' ]
+164 verbose reify failed optional dependency /home/ubuntu/node_modules/@nomicfoundation/edr-linux-arm64-musl
+165 silly reify mark deleted [ '/home/ubuntu/node_modules/@nomicfoundation/edr-linux-arm64-musl' ]
+166 verbose reify failed optional dependency /home/ubuntu/node_modules/@nomicfoundation/edr-linux-arm64-gnu
+167 silly reify mark deleted [ '/home/ubuntu/node_modules/@nomicfoundation/edr-linux-arm64-gnu' ]
+168 verbose reify failed optional dependency /home/ubuntu/node_modules/@nomicfoundation/edr-darwin-x64
+169 silly reify mark deleted [ '/home/ubuntu/node_modules/@nomicfoundation/edr-darwin-x64' ]
+170 verbose reify failed optional dependency /home/ubuntu/node_modules/@nomicfoundation/edr-darwin-arm64
+171 silly reify mark deleted [ '/home/ubuntu/node_modules/@nomicfoundation/edr-darwin-arm64' ]
+172 timing reifyNode:node_modules/fsevents Completed in 12ms
+173 timing reifyNode:node_modules/@nomicfoundation/solidity-analyzer-win32-x64-msvc Completed in 11ms
+174 timing reifyNode:node_modules/@nomicfoundation/solidity-analyzer-win32-ia32-msvc Completed in 11ms
+175 timing reifyNode:node_modules/@nomicfoundation/solidity-analyzer-win32-arm64-msvc Completed in 11ms
+176 timing reifyNode:node_modules/@nomicfoundation/solidity-analyzer-linux-arm64-musl Completed in 11ms
+177 timing reifyNode:node_modules/@nomicfoundation/solidity-analyzer-linux-arm64-gnu Completed in 11ms
+178 timing reifyNode:node_modules/@nomicfoundation/solidity-analyzer-freebsd-x64 Completed in 11ms
+179 timing reifyNode:node_modules/@nomicfoundation/solidity-analyzer-darwin-x64 Completed in 11ms
+180 timing reifyNode:node_modules/@nomicfoundation/solidity-analyzer-darwin-arm64 Completed in 11ms
+181 timing reifyNode:node_modules/@nomicfoundation/edr-win32-x64-msvc Completed in 11ms
+182 timing reifyNode:node_modules/@nomicfoundation/edr-linux-arm64-musl Completed in 12ms
+183 timing reifyNode:node_modules/@nomicfoundation/edr-linux-arm64-gnu Completed in 12ms
+184 timing reifyNode:node_modules/@nomicfoundation/edr-darwin-x64 Completed in 11ms
+185 timing reifyNode:node_modules/@nomicfoundation/edr-darwin-arm64 Completed in 11ms
+186 silly tarball no local data for base64-sol@https://registry.npmjs.org/base64-sol/-/base64-sol-1.0.1.tgz. Extracting by manifest.
+187 silly tarball no local data for @uniswap/lib@https://registry.npmjs.org/@uniswap/lib/-/lib-4.0.1-alpha.tgz. Extracting by manifest.
+188 silly tarball no local data for hardhat-watcher@https://registry.npmjs.org/hardhat-watcher/-/hardhat-watcher-2.5.0.tgz. Extracting by manifest.
+189 silly tarball no local data for dotenv@https://registry.npmjs.org/dotenv/-/dotenv-14.3.2.tgz. Extracting by manifest.
+190 silly tarball no local data for @uniswap/v3-core@https://registry.npmjs.org/@uniswap/v3-core/-/v3-core-1.0.1.tgz. Extracting by manifest.
+191 silly tarball no local data for @uniswap/v2-core@https://registry.npmjs.org/@uniswap/v2-core/-/v2-core-1.0.1.tgz. Extracting by manifest.
+192 silly tarball no local data for @openzeppelin/contracts@https://registry.npmjs.org/@openzeppelin/contracts/-/contracts-3.4.2-solc-0.7.tgz. Extracting by manifest.
+193 silly tarball no local data for toformat@https://registry.npmjs.org/toformat/-/toformat-2.0.0.tgz. Extracting by manifest.
+194 silly tarball no local data for jsbi@https://registry.npmjs.org/jsbi/-/jsbi-3.2.5.tgz. Extracting by manifest.
+195 silly tarball no local data for decimal.js-light@https://registry.npmjs.org/decimal.js-light/-/decimal.js-light-2.5.1.tgz. Extracting by manifest.
+196 silly tarball no local data for big.js@https://registry.npmjs.org/big.js/-/big.js-5.2.2.tgz. Extracting by manifest.
+197 silly tarball no local data for tiny-warning@https://registry.npmjs.org/tiny-warning/-/tiny-warning-1.0.3.tgz. Extracting by manifest.
+198 silly tarball no local data for tiny-invariant@https://registry.npmjs.org/tiny-invariant/-/tiny-invariant-1.3.3.tgz. Extracting by manifest.
+199 silly tarball no local data for @uniswap/v3-staker@https://registry.npmjs.org/@uniswap/v3-staker/-/v3-staker-1.0.0.tgz. Extracting by manifest.
+200 silly tarball no local data for @uniswap/v3-periphery@https://registry.npmjs.org/@uniswap/v3-periphery/-/v3-periphery-1.4.4.tgz. Extracting by manifest.
+201 silly tarball no local data for @uniswap/swap-router-contracts@https://registry.npmjs.org/@uniswap/swap-router-contracts/-/swap-router-contracts-1.3.1.tgz. Extracting by manifest.
+202 silly tarball no local data for @uniswap/sdk-core@https://registry.npmjs.org/@uniswap/sdk-core/-/sdk-core-4.2.1.tgz. Extracting by manifest.
+203 silly tarball no local data for @uniswap/v3-sdk@https://registry.npmjs.org/@uniswap/v3-sdk/-/v3-sdk-3.11.1.tgz. Extracting by manifest.
+204 silly tarball no local data for @nomicfoundation/solidity-analyzer-linux-x64-musl@https://registry.npmjs.org/@nomicfoundation/solidity-analyzer-linux-x64-musl/-/solidity-analyzer-linux-x64-musl-0.1.1.tgz. Extracting by manifest.
+205 silly tarball no local data for @nomicfoundation/edr-linux-x64-musl@https://registry.npmjs.org/@nomicfoundation/edr-linux-x64-musl/-/edr-linux-x64-musl-0.3.7.tgz. Extracting by manifest.
+206 silly tarball no local data for @uniswap/v3-core@https://registry.npmjs.org/@uniswap/v3-core/-/v3-core-1.0.0.tgz. Extracting by manifest.
+207 silly tarball no local data for @openzeppelin/contracts@https://registry.npmjs.org/@openzeppelin/contracts/-/contracts-3.4.1-solc-0.7-2.tgz. Extracting by manifest.
+208 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 89ms
+209 timing auditReport:getReport Completed in 99ms
+210 silly audit report {
+210 silly audit report   'yargs-parser': [
+210 silly audit report     {
+210 silly audit report       id: 1088783,
+210 silly audit report       url: 'https://github.com/advisories/GHSA-p9pc-299p-vxgp',
+210 silly audit report       title: 'yargs-parser Vulnerable to Prototype Pollution',
+210 silly audit report       severity: 'moderate',
+210 silly audit report       vulnerable_versions: '<=5.0.0',
+210 silly audit report       cwe: [Array],
+210 silly audit report       cvss: [Object]
+210 silly audit report     }
+210 silly audit report   ],
+210 silly audit report   request: [
+210 silly audit report     {
+210 silly audit report       id: 1096727,
+210 silly audit report       url: 'https://github.com/advisories/GHSA-p8p7-x288-28g6',
+210 silly audit report       title: 'Server-Side Request Forgery in Request',
+210 silly audit report       severity: 'moderate',
+210 silly audit report       vulnerable_versions: '<=2.88.2',
+210 silly audit report       cwe: [Array],
+210 silly audit report       cvss: [Object]
+210 silly audit report     }
+210 silly audit report   ],
+210 silly audit report   'tough-cookie': [
+210 silly audit report     {
+210 silly audit report       id: 1096643,
+210 silly audit report       url: 'https://github.com/advisories/GHSA-72xf-g2v4-qvf3',
+210 silly audit report       title: 'tough-cookie Prototype Pollution vulnerability',
+210 silly audit report       severity: 'moderate',
+210 silly audit report       vulnerable_versions: '<4.1.3',
+210 silly audit report       cwe: [Array],
+210 silly audit report       cvss: [Object]
+210 silly audit report     }
+210 silly audit report   ]
+210 silly audit report }
+211 timing metavuln:cache:get:security-advisory:yargs-parser:aunL6+WC7fxzK35HR6zMJWRGMTpxarYcztRqCFKv8bi6TfqlZ+R952j+ta6T/jT3uCbmL10XXWbxWMYR2Zi1yQ== Completed in 3ms
+212 timing metavuln:cache:get:security-advisory:request:YWMj9j1MPluG/i7GM3/il619Yyh/e9mxa0CiULhZGXRZl+TQlFyAG7gUf9x/Cj8XvveNYjOq7h13G6ZKSAmEzg== Completed in 2ms
+213 timing metavuln:cache:get:security-advisory:tough-cookie:aRAKLXbWov0kh0wFEWh9hABwUzFKLqVC3S7BUYhe4AGRd2ip956OwrgiPOzilK72rHxXNz1q8TFxqHD0molnrw== Completed in 2ms
+214 http fetch GET 200 https://registry.npmjs.org/base64-sol/-/base64-sol-1.0.1.tgz 201ms (cache miss)
+215 timing reifyNode:node_modules/base64-sol Completed in 224ms
+216 http fetch GET 200 https://registry.npmjs.org/big.js/-/big.js-5.2.2.tgz 215ms (cache miss)
+217 timing reifyNode:node_modules/big.js Completed in 244ms
+218 http fetch GET 200 https://registry.npmjs.org/toformat/-/toformat-2.0.0.tgz 241ms (cache miss)
+219 timing reifyNode:node_modules/toformat Completed in 268ms
+220 http fetch GET 200 https://registry.npmjs.org/tiny-warning/-/tiny-warning-1.0.3.tgz 244ms (cache miss)
+221 timing reifyNode:node_modules/tiny-warning Completed in 273ms
+222 http fetch GET 200 https://registry.npmjs.org/tiny-invariant/-/tiny-invariant-1.3.3.tgz 248ms (cache miss)
+223 http fetch GET 200 https://registry.npmjs.org/hardhat-watcher/-/hardhat-watcher-2.5.0.tgz 260ms (cache miss)
+224 http fetch GET 200 https://registry.npmjs.org/yargs-parser 194ms (cache miss)
+225 timing metavuln:packument:yargs-parser Completed in 196ms
+226 timing metavuln:load:security-advisory:yargs-parser:1088783 Completed in 4ms
+227 timing reifyNode:node_modules/tiny-invariant Completed in 298ms
+228 http fetch GET 200 https://registry.npmjs.org/dotenv/-/dotenv-14.3.2.tgz 276ms (cache miss)
+229 timing reifyNode:node_modules/dotenv Completed in 300ms
+230 timing reifyNode:node_modules/ganache/node_modules/utf-8-validate Completed in 299ms
+231 timing reifyNode:node_modules/ganache/node_modules/bufferutil Completed in 299ms
+232 timing reifyNode:node_modules/hardhat-watcher Completed in 306ms
+233 http fetch GET 200 https://registry.npmjs.org/tough-cookie 220ms (cache miss)
+234 timing metavuln:packument:tough-cookie Completed in 221ms
+235 timing metavuln:load:security-advisory:tough-cookie:1096643 Completed in 1ms
+236 http fetch GET 200 https://registry.npmjs.org/request 262ms (cache miss)
+237 timing metavuln:packument:request Completed in 264ms
+238 timing metavuln:load:security-advisory:request:1096727 Completed in 9ms
+239 timing metavuln:cache:put:security-advisory:yargs-parser:aunL6+WC7fxzK35HR6zMJWRGMTpxarYcztRqCFKv8bi6TfqlZ+R952j+ta6T/jT3uCbmL10XXWbxWMYR2Zi1yQ== Completed in 94ms
+240 timing metavuln:calculate:security-advisory:yargs-parser:1088783 Completed in 294ms
+241 http fetch GET 200 https://registry.npmjs.org/@uniswap/lib/-/lib-4.0.1-alpha.tgz 359ms (cache miss)
+242 timing reifyNode:node_modules/@uniswap/lib Completed in 396ms
+243 timing metavuln:cache:put:security-advisory:tough-cookie:aRAKLXbWov0kh0wFEWh9hABwUzFKLqVC3S7BUYhe4AGRd2ip956OwrgiPOzilK72rHxXNz1q8TFxqHD0molnrw== Completed in 95ms
+244 timing metavuln:calculate:security-advisory:tough-cookie:1096643 Completed in 318ms
+245 timing metavuln:cache:put:security-advisory:request:YWMj9j1MPluG/i7GM3/il619Yyh/e9mxa0CiULhZGXRZl+TQlFyAG7gUf9x/Cj8XvveNYjOq7h13G6ZKSAmEzg== Completed in 78ms
+246 timing metavuln:calculate:security-advisory:request:1096727 Completed in 351ms
+247 timing metavuln:cache:get:security-advisory:yargs:YFNsiLamoKLF7/yDzon0Dcpp7U9muIXbZqunc5micX5yqfqxlBtT8DqvbuzFzp3q2aGd6QepT2BwYTLZEjjgUg== Completed in 2ms
+248 http fetch GET 200 https://registry.npmjs.org/decimal.js-light/-/decimal.js-light-2.5.1.tgz 423ms (cache miss)
+249 timing reifyNode:node_modules/decimal.js-light Completed in 451ms
+250 http fetch GET 200 https://registry.npmjs.org/jsbi/-/jsbi-3.2.5.tgz 438ms (cache miss)
+251 timing reifyNode:node_modules/jsbi Completed in 466ms
+252 http fetch GET 200 https://registry.npmjs.org/@uniswap/v3-staker/-/v3-staker-1.0.0.tgz 471ms (cache miss)
+253 warn deprecated @uniswap/v3-staker@1.0.0: Please upgrade to 1.0.1
+254 timing reifyNode:node_modules/@uniswap/v3-staker Completed in 502ms
+255 http fetch GET 200 https://registry.npmjs.org/@uniswap/sdk-core/-/sdk-core-4.2.1.tgz 491ms (cache miss)
+256 timing reifyNode:node_modules/@uniswap/sdk-core Completed in 530ms
+257 http fetch GET 200 https://registry.npmjs.org/@nomicfoundation/solidity-analyzer-linux-x64-musl/-/solidity-analyzer-linux-x64-musl-0.1.1.tgz 516ms (cache miss)
+258 timing reifyNode:node_modules/@nomicfoundation/solidity-analyzer-linux-x64-musl Completed in 549ms
+259 http fetch GET 200 https://registry.npmjs.org/yargs 128ms (cache miss)
+260 timing metavuln:packument:yargs Completed in 131ms
+261 timing metavuln:load:security-advisory:yargs:aunL6+WC7fxzK35HR6zMJWRGMTpxarYcztRqCFKv8bi6TfqlZ+R952j+ta6T/jT3uCbmL10XXWbxWMYR2Zi1yQ== Completed in 48ms
+262 timing metavuln:cache:put:security-advisory:yargs:YFNsiLamoKLF7/yDzon0Dcpp7U9muIXbZqunc5micX5yqfqxlBtT8DqvbuzFzp3q2aGd6QepT2BwYTLZEjjgUg== Completed in 28ms
+263 timing metavuln:calculate:security-advisory:yargs:aunL6+WC7fxzK35HR6zMJWRGMTpxarYcztRqCFKv8bi6TfqlZ+R952j+ta6T/jT3uCbmL10XXWbxWMYR2Zi1yQ== Completed in 207ms
+264 timing metavuln:cache:get:security-advisory:@resolver-engine/core:X041We6mUdTOdDdpdOC5hPnkoyRd5CDNrkX1Uq+nPNbL+mR3pf5y0bgbVndEgR5JnTyfjuaj96wY+tKtTamquA== Completed in 1ms
+265 http fetch GET 200 https://registry.npmjs.org/@uniswap/v3-sdk/-/v3-sdk-3.11.1.tgz 636ms (cache miss)
+266 timing reifyNode:node_modules/@uniswap/v3-sdk Completed in 678ms
+267 http fetch GET 200 https://registry.npmjs.org/@uniswap/v3-core/-/v3-core-1.0.1.tgz 732ms (cache miss)
+268 timing reifyNode:node_modules/@uniswap/v3-core Completed in 758ms
+269 http fetch GET 200 https://registry.npmjs.org/@uniswap/v3-core/-/v3-core-1.0.0.tgz 725ms (cache miss)
+270 timing reifyNode:node_modules/@uniswap/v3-staker/node_modules/@uniswap/v3-core Completed in 760ms
+271 http fetch GET 200 https://registry.npmjs.org/@uniswap/v2-core/-/v2-core-1.0.1.tgz 746ms (cache miss)
+272 timing reifyNode:node_modules/@uniswap/v2-core Completed in 773ms
+273 http fetch GET 200 https://registry.npmjs.org/@uniswap/swap-router-contracts/-/swap-router-contracts-1.3.1.tgz 761ms (cache miss)
+274 timing reifyNode:node_modules/@uniswap/swap-router-contracts Completed in 792ms
+275 http fetch GET 200 https://registry.npmjs.org/@resolver-engine%2fcore 188ms (cache miss)
+276 timing metavuln:packument:@resolver-engine/core Completed in 188ms
+277 timing metavuln:load:security-advisory:@resolver-engine/core:YWMj9j1MPluG/i7GM3/il619Yyh/e9mxa0CiULhZGXRZl+TQlFyAG7gUf9x/Cj8XvveNYjOq7h13G6ZKSAmEzg== Completed in 1ms
+278 http fetch GET 200 https://registry.npmjs.org/@openzeppelin/contracts/-/contracts-3.4.1-solc-0.7-2.tgz 802ms (cache miss)
+279 timing reifyNode:node_modules/@uniswap/v3-staker/node_modules/@openzeppelin/contracts Completed in 838ms
+280 timing metavuln:cache:put:security-advisory:@resolver-engine/core:X041We6mUdTOdDdpdOC5hPnkoyRd5CDNrkX1Uq+nPNbL+mR3pf5y0bgbVndEgR5JnTyfjuaj96wY+tKtTamquA== Completed in 7ms
+281 timing metavuln:calculate:security-advisory:@resolver-engine/core:YWMj9j1MPluG/i7GM3/il619Yyh/e9mxa0CiULhZGXRZl+TQlFyAG7gUf9x/Cj8XvveNYjOq7h13G6ZKSAmEzg== Completed in 196ms
+282 timing metavuln:cache:get:security-advisory:request:zPhZZyPBfcop7cTKucPn7aizK+wXNuO7ZeO3UiULmVlXQh/x4BiBim/gNJOcE+SrLM0lKM4edgESKf2kCKO+MA== Completed in 1ms
+283 timing metavuln:load:security-advisory:request:aRAKLXbWov0kh0wFEWh9hABwUzFKLqVC3S7BUYhe4AGRd2ip956OwrgiPOzilK72rHxXNz1q8TFxqHD0molnrw== Completed in 7ms
+284 timing metavuln:cache:put:security-advisory:request:zPhZZyPBfcop7cTKucPn7aizK+wXNuO7ZeO3UiULmVlXQh/x4BiBim/gNJOcE+SrLM0lKM4edgESKf2kCKO+MA== Completed in 7ms
+285 timing metavuln:calculate:security-advisory:request:aRAKLXbWov0kh0wFEWh9hABwUzFKLqVC3S7BUYhe4AGRd2ip956OwrgiPOzilK72rHxXNz1q8TFxqHD0molnrw== Completed in 15ms
+286 timing metavuln:cache:get:security-advisory:solc:rh8opfJndVGamaptus+yrhuMBik587gGZPIi+IhcVEmnTyV7jb0tOC4NXA40+4wj1vB2T5K6YDOdRg8Ijlg+Tw== Completed in 1ms
+287 http fetch GET 200 https://registry.npmjs.org/@openzeppelin/contracts/-/contracts-3.4.2-solc-0.7.tgz 837ms (cache miss)
+288 timing reifyNode:node_modules/@openzeppelin/contracts Completed in 863ms
+289 http fetch GET 200 https://registry.npmjs.org/@uniswap/v3-periphery/-/v3-periphery-1.4.4.tgz 859ms (cache miss)
+290 timing reifyNode:node_modules/@uniswap/v3-periphery Completed in 890ms
+291 http fetch GET 200 https://registry.npmjs.org/solc 93ms (cache miss)
+292 timing metavuln:packument:solc Completed in 96ms
+293 timing metavuln:load:security-advisory:solc:YFNsiLamoKLF7/yDzon0Dcpp7U9muIXbZqunc5micX5yqfqxlBtT8DqvbuzFzp3q2aGd6QepT2BwYTLZEjjgUg== Completed in 6ms
+294 timing metavuln:cache:put:security-advisory:solc:rh8opfJndVGamaptus+yrhuMBik587gGZPIi+IhcVEmnTyV7jb0tOC4NXA40+4wj1vB2T5K6YDOdRg8Ijlg+Tw== Completed in 3ms
+295 timing metavuln:calculate:security-advisory:solc:YFNsiLamoKLF7/yDzon0Dcpp7U9muIXbZqunc5micX5yqfqxlBtT8DqvbuzFzp3q2aGd6QepT2BwYTLZEjjgUg== Completed in 105ms
+296 timing metavuln:cache:get:security-advisory:@resolver-engine/fs:/f0Vpbr/qZDSZGXpUnXuhEKxch4YTIwwm1CaNAAVxwpzAOK91LCiLwywgYXaXGfC84lkxArAkmpnHZtIw3PczA== Completed in 6ms
+297 timing metavuln:cache:get:security-advisory:@resolver-engine/imports:6oVswwqvlRK9wrTARc3VlnTDl99T3o57KdNmjcTZxvXE7k5Z9/FGStP79fRapwCevRmp0DH0/DVKkWDyQB4Ysw== Completed in 5ms
+298 http fetch GET 200 https://registry.npmjs.org/@nomicfoundation/edr-linux-x64-musl/-/edr-linux-x64-musl-0.3.7.tgz 1007ms (cache miss)
+299 timing reifyNode:node_modules/@nomicfoundation/edr-linux-x64-musl Completed in 1042ms
+300 timing reify:unpack Completed in 1045ms
+301 timing reify:unretire Completed in 0ms
+302 timing build:queue Completed in 2ms
+303 info run bufferutil@4.0.5 install node_modules/ganache/node_modules/bufferutil node-gyp rebuild
+304 http fetch GET 200 https://registry.npmjs.org/@resolver-engine%2fimports 143ms (cache miss)
+305 timing metavuln:packument:@resolver-engine/imports Completed in 143ms
+306 timing metavuln:load:security-advisory:@resolver-engine/imports:X041We6mUdTOdDdpdOC5hPnkoyRd5CDNrkX1Uq+nPNbL+mR3pf5y0bgbVndEgR5JnTyfjuaj96wY+tKtTamquA== Completed in 1ms
+307 timing metavuln:cache:put:security-advisory:@resolver-engine/imports:6oVswwqvlRK9wrTARc3VlnTDl99T3o57KdNmjcTZxvXE7k5Z9/FGStP79fRapwCevRmp0DH0/DVKkWDyQB4Ysw== Completed in 1ms
+308 timing metavuln:calculate:security-advisory:@resolver-engine/imports:X041We6mUdTOdDdpdOC5hPnkoyRd5CDNrkX1Uq+nPNbL+mR3pf5y0bgbVndEgR5JnTyfjuaj96wY+tKtTamquA== Completed in 145ms
+309 http fetch GET 200 https://registry.npmjs.org/@resolver-engine%2ffs 151ms (cache miss)
+310 timing metavuln:packument:@resolver-engine/fs Completed in 152ms
+311 timing metavuln:load:security-advisory:@resolver-engine/fs:X041We6mUdTOdDdpdOC5hPnkoyRd5CDNrkX1Uq+nPNbL+mR3pf5y0bgbVndEgR5JnTyfjuaj96wY+tKtTamquA== Completed in 1ms
+312 timing metavuln:cache:put:security-advisory:@resolver-engine/fs:/f0Vpbr/qZDSZGXpUnXuhEKxch4YTIwwm1CaNAAVxwpzAOK91LCiLwywgYXaXGfC84lkxArAkmpnHZtIw3PczA== Completed in 1ms
+313 timing metavuln:calculate:security-advisory:@resolver-engine/fs:X041We6mUdTOdDdpdOC5hPnkoyRd5CDNrkX1Uq+nPNbL+mR3pf5y0bgbVndEgR5JnTyfjuaj96wY+tKtTamquA== Completed in 154ms
+314 timing metavuln:cache:get:security-advisory:@ensdomains/ens:9dDT/HqnzLEW1SQXNwSd6m3kqZoRLbgrnbNDfoymure52ile6sfDSJr58PEnpIEQGDEJO5HNC/cCIdYaIiHwyw== Completed in 2ms
+315 http fetch GET 200 https://registry.npmjs.org/@ensdomains%2fens 73ms (cache miss)
+316 timing metavuln:packument:@ensdomains/ens Completed in 73ms
+317 timing metavuln:load:security-advisory:@ensdomains/ens:rh8opfJndVGamaptus+yrhuMBik587gGZPIi+IhcVEmnTyV7jb0tOC4NXA40+4wj1vB2T5K6YDOdRg8Ijlg+Tw== Completed in 1ms
+318 timing metavuln:cache:put:security-advisory:@ensdomains/ens:9dDT/HqnzLEW1SQXNwSd6m3kqZoRLbgrnbNDfoymure52ile6sfDSJr58PEnpIEQGDEJO5HNC/cCIdYaIiHwyw== Completed in 2ms
+319 timing metavuln:calculate:security-advisory:@ensdomains/ens:rh8opfJndVGamaptus+yrhuMBik587gGZPIi+IhcVEmnTyV7jb0tOC4NXA40+4wj1vB2T5K6YDOdRg8Ijlg+Tw== Completed in 78ms
+320 timing metavuln:cache:get:security-advisory:@ethereum-waffle/compiler:eIkOdtuObVbnKMvVQPk/8MCaFS912uQbGcld8Vy+WrHs2a8kQYNrrhRBmezw4SzPm+9Q2LeKWnRYr0hoqMe7vg== Completed in 3ms
+321 timing metavuln:cache:get:security-advisory:@resolver-engine/imports-fs:zLtcsm4fmqkQnfBW/RWeYjqWu6TLmv+8DUmr/wbnhZPyHvV8ScwpGwjiKwytoz7EjUeXodLbiuJwmnD+PUSbHA== Completed in 2ms
+322 http fetch GET 200 https://registry.npmjs.org/@resolver-engine%2fimports-fs 169ms (cache miss)
+323 timing metavuln:packument:@resolver-engine/imports-fs Completed in 170ms
+324 timing metavuln:load:security-advisory:@resolver-engine/imports-fs:6oVswwqvlRK9wrTARc3VlnTDl99T3o57KdNmjcTZxvXE7k5Z9/FGStP79fRapwCevRmp0DH0/DVKkWDyQB4Ysw== Completed in 1ms
+325 timing metavuln:cache:put:security-advisory:@resolver-engine/imports-fs:zLtcsm4fmqkQnfBW/RWeYjqWu6TLmv+8DUmr/wbnhZPyHvV8ScwpGwjiKwytoz7EjUeXodLbiuJwmnD+PUSbHA== Completed in 1ms
+326 timing metavuln:calculate:security-advisory:@resolver-engine/imports-fs:6oVswwqvlRK9wrTARc3VlnTDl99T3o57KdNmjcTZxvXE7k5Z9/FGStP79fRapwCevRmp0DH0/DVKkWDyQB4Ysw== Completed in 172ms
+327 info run bufferutil@4.0.5 install { code: 1, signal: null }
+328 verbose reify failed optional dependency /home/ubuntu/node_modules/ganache/node_modules/bufferutil
+329 silly reify mark deleted [ '/home/ubuntu/node_modules/ganache/node_modules/bufferutil' ]
+330 timing build:run:install:node_modules/ganache/node_modules/bufferutil Completed in 372ms
+331 info run utf-8-validate@5.0.7 install node_modules/ganache/node_modules/utf-8-validate node-gyp rebuild
+332 http fetch GET 200 https://registry.npmjs.org/@ethereum-waffle%2fcompiler 231ms (cache miss)
+333 timing metavuln:packument:@ethereum-waffle/compiler Completed in 234ms
+334 timing metavuln:load:security-advisory:@ethereum-waffle/compiler:6oVswwqvlRK9wrTARc3VlnTDl99T3o57KdNmjcTZxvXE7k5Z9/FGStP79fRapwCevRmp0DH0/DVKkWDyQB4Ysw== Completed in 8ms
+335 timing metavuln:cache:put:security-advisory:@ethereum-waffle/compiler:eIkOdtuObVbnKMvVQPk/8MCaFS912uQbGcld8Vy+WrHs2a8kQYNrrhRBmezw4SzPm+9Q2LeKWnRYr0hoqMe7vg== Completed in 20ms
+336 timing metavuln:calculate:security-advisory:@ethereum-waffle/compiler:6oVswwqvlRK9wrTARc3VlnTDl99T3o57KdNmjcTZxvXE7k5Z9/FGStP79fRapwCevRmp0DH0/DVKkWDyQB4Ysw== Completed in 265ms
+337 timing metavuln:cache:get:security-advisory:@resolver-engine/imports-fs:UQ/EJ84V2hhyi1ayDB+F+fgTaO7DEaB82QRX+EzAiBa9/aMIrW77Af/K9osVdjVPwydrixkyY96Q7z05ZDU+Zw== Completed in 1ms
+338 timing metavuln:load:security-advisory:@resolver-engine/imports-fs:/f0Vpbr/qZDSZGXpUnXuhEKxch4YTIwwm1CaNAAVxwpzAOK91LCiLwywgYXaXGfC84lkxArAkmpnHZtIw3PczA== Completed in 0ms
+339 timing metavuln:cache:put:security-advisory:@resolver-engine/imports-fs:UQ/EJ84V2hhyi1ayDB+F+fgTaO7DEaB82QRX+EzAiBa9/aMIrW77Af/K9osVdjVPwydrixkyY96Q7z05ZDU+Zw== Completed in 4ms
+340 timing metavuln:calculate:security-advisory:@resolver-engine/imports-fs:/f0Vpbr/qZDSZGXpUnXuhEKxch4YTIwwm1CaNAAVxwpzAOK91LCiLwywgYXaXGfC84lkxArAkmpnHZtIw3PczA== Completed in 6ms
+341 timing metavuln:cache:get:security-advisory:@ethereum-waffle/ens:TsdbROhtgN7ccWLrtgg80k9yHuFF7u7AgoTGoj1JVvl6s04tmTfDZpx/t45ie63XM/aPfec/YkMd85QLNLj4nA== Completed in 3ms
+342 http fetch GET 200 https://registry.npmjs.org/@ethereum-waffle%2fens 240ms (cache miss)
+343 timing metavuln:packument:@ethereum-waffle/ens Completed in 243ms
+344 timing metavuln:load:security-advisory:@ethereum-waffle/ens:9dDT/HqnzLEW1SQXNwSd6m3kqZoRLbgrnbNDfoymure52ile6sfDSJr58PEnpIEQGDEJO5HNC/cCIdYaIiHwyw== Completed in 15ms
+345 timing metavuln:cache:put:security-advisory:@ethereum-waffle/ens:TsdbROhtgN7ccWLrtgg80k9yHuFF7u7AgoTGoj1JVvl6s04tmTfDZpx/t45ie63XM/aPfec/YkMd85QLNLj4nA== Completed in 2ms
+346 timing metavuln:calculate:security-advisory:@ethereum-waffle/ens:9dDT/HqnzLEW1SQXNwSd6m3kqZoRLbgrnbNDfoymure52ile6sfDSJr58PEnpIEQGDEJO5HNC/cCIdYaIiHwyw== Completed in 260ms
+347 timing metavuln:cache:get:security-advisory:@ethereum-waffle/compiler:oMs0bes+xodVtoDUskrdwDLTRtVkxQI9R2bjdIjv8MBWakjnl0NaAv/tZVVhZ+JsqSuZnxcWF6qDFOrTIsaGUA== Completed in 0ms
+348 timing metavuln:load:security-advisory:@ethereum-waffle/compiler:zLtcsm4fmqkQnfBW/RWeYjqWu6TLmv+8DUmr/wbnhZPyHvV8ScwpGwjiKwytoz7EjUeXodLbiuJwmnD+PUSbHA== Completed in 8ms
+349 timing metavuln:cache:put:security-advisory:@ethereum-waffle/compiler:oMs0bes+xodVtoDUskrdwDLTRtVkxQI9R2bjdIjv8MBWakjnl0NaAv/tZVVhZ+JsqSuZnxcWF6qDFOrTIsaGUA== Completed in 2ms
+350 timing metavuln:calculate:security-advisory:@ethereum-waffle/compiler:zLtcsm4fmqkQnfBW/RWeYjqWu6TLmv+8DUmr/wbnhZPyHvV8ScwpGwjiKwytoz7EjUeXodLbiuJwmnD+PUSbHA== Completed in 10ms
+351 timing metavuln:cache:get:security-advisory:ethereum-waffle:d+CKhQaJdIIwhW4HOjKLJ6qjbJ8DcEL/lS0Zz+pk6xeb1G/NYLXjIWlqNf1Sxtf814awiU/4WgNtppxmVtnW3Q== Completed in 1ms
+352 info run utf-8-validate@5.0.7 install { code: 1, signal: null }
+353 verbose reify failed optional dependency /home/ubuntu/node_modules/ganache/node_modules/utf-8-validate
+354 silly reify mark deleted [ '/home/ubuntu/node_modules/ganache/node_modules/utf-8-validate' ]
+355 timing build:run:install:node_modules/ganache/node_modules/utf-8-validate Completed in 377ms
+356 timing build:run:install Completed in 750ms
+357 timing build:deps Completed in 752ms
+358 timing build Completed in 752ms
+359 timing reify:build Completed in 753ms
+360 timing reify:trash Completed in 4ms
+361 timing reify:save Completed in 169ms
+362 http fetch GET 200 https://registry.npmjs.org/ethereum-waffle 315ms (cache miss)
+363 timing metavuln:packument:ethereum-waffle Completed in 318ms
+364 timing metavuln:load:security-advisory:ethereum-waffle:eIkOdtuObVbnKMvVQPk/8MCaFS912uQbGcld8Vy+WrHs2a8kQYNrrhRBmezw4SzPm+9Q2LeKWnRYr0hoqMe7vg== Completed in 27ms
+365 timing metavuln:cache:put:security-advisory:ethereum-waffle:d+CKhQaJdIIwhW4HOjKLJ6qjbJ8DcEL/lS0Zz+pk6xeb1G/NYLXjIWlqNf1Sxtf814awiU/4WgNtppxmVtnW3Q== Completed in 3ms
+366 timing metavuln:calculate:security-advisory:ethereum-waffle:eIkOdtuObVbnKMvVQPk/8MCaFS912uQbGcld8Vy+WrHs2a8kQYNrrhRBmezw4SzPm+9Q2LeKWnRYr0hoqMe7vg== Completed in 348ms
+367 timing metavuln:cache:get:security-advisory:@ethereum-waffle/provider:0X5jYHtfCmoLUEFfNKlEFTg5ma2R18QOpOJHfBwSm0gxJKlaK6CueutUjOWF3eJSSIAfkyaKm+6z30mZKqipFA== Completed in 1ms
+368 http fetch GET 200 https://registry.npmjs.org/@ethereum-waffle%2fprovider 190ms (cache miss)
+369 timing metavuln:packument:@ethereum-waffle/provider Completed in 192ms
+370 timing metavuln:load:security-advisory:@ethereum-waffle/provider:TsdbROhtgN7ccWLrtgg80k9yHuFF7u7AgoTGoj1JVvl6s04tmTfDZpx/t45ie63XM/aPfec/YkMd85QLNLj4nA== Completed in 16ms
+371 timing metavuln:cache:put:security-advisory:@ethereum-waffle/provider:0X5jYHtfCmoLUEFfNKlEFTg5ma2R18QOpOJHfBwSm0gxJKlaK6CueutUjOWF3eJSSIAfkyaKm+6z30mZKqipFA== Completed in 4ms
+372 timing metavuln:calculate:security-advisory:@ethereum-waffle/provider:TsdbROhtgN7ccWLrtgg80k9yHuFF7u7AgoTGoj1JVvl6s04tmTfDZpx/t45ie63XM/aPfec/YkMd85QLNLj4nA== Completed in 212ms
+373 timing metavuln:cache:get:security-advisory:@nomiclabs/hardhat-waffle:ulIFRUgxIXzaJtf8ZzMlezTQZuxBiVjI4TeuHAS58Xpy9g+5y1vt3mvXcqIXfKDwCUzeYlDVMY3q/HDDJXw02w== Completed in 9ms
+374 http fetch GET 200 https://registry.npmjs.org/@nomiclabs%2fhardhat-waffle 149ms (cache miss)
+375 timing metavuln:packument:@nomiclabs/hardhat-waffle Completed in 149ms
+376 timing metavuln:load:security-advisory:@nomiclabs/hardhat-waffle:d+CKhQaJdIIwhW4HOjKLJ6qjbJ8DcEL/lS0Zz+pk6xeb1G/NYLXjIWlqNf1Sxtf814awiU/4WgNtppxmVtnW3Q== Completed in 4ms
+377 timing metavuln:cache:put:security-advisory:@nomiclabs/hardhat-waffle:ulIFRUgxIXzaJtf8ZzMlezTQZuxBiVjI4TeuHAS58Xpy9g+5y1vt3mvXcqIXfKDwCUzeYlDVMY3q/HDDJXw02w== Completed in 2ms
+378 timing metavuln:calculate:security-advisory:@nomiclabs/hardhat-waffle:d+CKhQaJdIIwhW4HOjKLJ6qjbJ8DcEL/lS0Zz+pk6xeb1G/NYLXjIWlqNf1Sxtf814awiU/4WgNtppxmVtnW3Q== Completed in 155ms
+379 timing metavuln:cache:get:security-advisory:@ethereum-waffle/chai:uswMBYUFJrcL1IxvLb4VtDVQYN7YYGYtf6mFVNUStF8cETzP53auaymbc6kAhyeN5Ve/h5acwp5p2JkSAAwJ7w== Completed in 2ms
+380 timing metavuln:cache:get:security-advisory:ethereum-waffle:u4r2Nzw7omPWNn1uuXJdDQ+BsoZY+EP2WE0OAuOcqrwwZwsxIOHJUD603PL+KFrfXuo7IIchiFEkWd62bNIcjQ== Completed in 1ms
+381 timing metavuln:load:security-advisory:ethereum-waffle:0X5jYHtfCmoLUEFfNKlEFTg5ma2R18QOpOJHfBwSm0gxJKlaK6CueutUjOWF3eJSSIAfkyaKm+6z30mZKqipFA== Completed in 13ms
+382 timing metavuln:cache:put:security-advisory:ethereum-waffle:u4r2Nzw7omPWNn1uuXJdDQ+BsoZY+EP2WE0OAuOcqrwwZwsxIOHJUD603PL+KFrfXuo7IIchiFEkWd62bNIcjQ== Completed in 4ms
+383 timing metavuln:calculate:security-advisory:ethereum-waffle:0X5jYHtfCmoLUEFfNKlEFTg5ma2R18QOpOJHfBwSm0gxJKlaK6CueutUjOWF3eJSSIAfkyaKm+6z30mZKqipFA== Completed in 18ms
+384 http fetch GET 200 https://registry.npmjs.org/@ethereum-waffle%2fchai 218ms (cache miss)
+385 timing metavuln:packument:@ethereum-waffle/chai Completed in 220ms
+386 timing metavuln:load:security-advisory:@ethereum-waffle/chai:0X5jYHtfCmoLUEFfNKlEFTg5ma2R18QOpOJHfBwSm0gxJKlaK6CueutUjOWF3eJSSIAfkyaKm+6z30mZKqipFA== Completed in 6ms
+387 timing metavuln:cache:put:security-advisory:@ethereum-waffle/chai:uswMBYUFJrcL1IxvLb4VtDVQYN7YYGYtf6mFVNUStF8cETzP53auaymbc6kAhyeN5Ve/h5acwp5p2JkSAAwJ7w== Completed in 1ms
+388 timing metavuln:calculate:security-advisory:@ethereum-waffle/chai:0X5jYHtfCmoLUEFfNKlEFTg5ma2R18QOpOJHfBwSm0gxJKlaK6CueutUjOWF3eJSSIAfkyaKm+6z30mZKqipFA== Completed in 227ms
+389 timing metavuln:cache:get:security-advisory:ethereum-waffle:rrRbmxG28iMG7RVEsXNJEMDyAiLqFBII3oDD+wwhvognA5Eg+fPwqD4qCBfi2VEFZj60XOPzDIYITXEwPCrMfA== Completed in 0ms
+390 timing metavuln:load:security-advisory:ethereum-waffle:uswMBYUFJrcL1IxvLb4VtDVQYN7YYGYtf6mFVNUStF8cETzP53auaymbc6kAhyeN5Ve/h5acwp5p2JkSAAwJ7w== Completed in 20ms
+391 timing metavuln:cache:put:security-advisory:ethereum-waffle:rrRbmxG28iMG7RVEsXNJEMDyAiLqFBII3oDD+wwhvognA5Eg+fPwqD4qCBfi2VEFZj60XOPzDIYITXEwPCrMfA== Completed in 2ms
+392 timing metavuln:calculate:security-advisory:ethereum-waffle:uswMBYUFJrcL1IxvLb4VtDVQYN7YYGYtf6mFVNUStF8cETzP53auaymbc6kAhyeN5Ve/h5acwp5p2JkSAAwJ7w== Completed in 22ms
+393 timing auditReport:init Completed in 2613ms
+394 timing reify:audit Completed in 2714ms
+395 timing reify Completed in 6125ms
+396 silly ADD node_modules/base64-sol
+397 silly ADD node_modules/@uniswap/lib
+398 silly ADD node_modules/hardhat-watcher
+399 silly ADD node_modules/dotenv
+400 silly ADD node_modules/@uniswap/v3-core
+401 silly ADD node_modules/@uniswap/v2-core
+402 silly ADD node_modules/@openzeppelin/contracts
+403 silly ADD node_modules/toformat
+404 silly ADD node_modules/jsbi
+405 silly ADD node_modules/decimal.js-light
+406 silly ADD node_modules/big.js
+407 silly ADD node_modules/tiny-warning
+408 silly ADD node_modules/tiny-invariant
+409 silly ADD node_modules/@uniswap/v3-staker
+410 silly ADD node_modules/@uniswap/v3-staker/node_modules/@uniswap/v3-core
+411 silly ADD node_modules/@uniswap/v3-staker/node_modules/@openzeppelin/contracts
+412 silly ADD node_modules/@uniswap/v3-periphery
+413 silly ADD node_modules/@uniswap/swap-router-contracts
+414 silly ADD node_modules/@uniswap/sdk-core
+415 silly ADD node_modules/@uniswap/v3-sdk
+416 silly ADD
+417 silly ADD
+418 silly ADD
+419 silly ADD
+420 silly ADD node_modules/@nomicfoundation/solidity-analyzer-linux-x64-musl
+421 silly ADD
+422 silly ADD
+423 silly ADD
+424 silly ADD
+425 silly ADD
+426 silly ADD
+427 silly ADD node_modules/@nomicfoundation/edr-linux-x64-musl
+428 silly ADD
+429 silly ADD
+430 silly ADD
+431 silly ADD
+432 silly ADD
+433 silly ADD
+434 timing command:i Completed in 6150ms
+435 verbose exit 0
+436 timing npm Completed in 6329ms
+437 info ok
